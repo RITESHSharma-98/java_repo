@@ -8,18 +8,12 @@ class Main {
 }
 // make api for create
 class Create {
-    int custumer_id;
-    String custumer_name;
-    String custumer_address;
-    String custumer_phone;
-
-    
- //getter and setter
-                 
-        public int getCustumer_id() {
-            return custumer_id;
-        }
-
+    String customerFirstName;
+    String customerLastName;
+    String custumerIssue;
+    String custumerNumber;
+    String custumerEmail;
+    String custunerAttchment;
 
 }
 
