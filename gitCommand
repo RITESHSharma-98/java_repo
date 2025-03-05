@@ -47,10 +47,16 @@ git reset // to remove all the files from the staging area
 git reset head~1 // to remove the last commit
 git reset HEAD~2 // to remove the last 2 commit
 git log
-git reset hash // to remove the commit
+git log --oneline // to check the commit history
+
+git reset hash // to remove the commit   
+
+git reflog // to check the history of the commit
 git reset --hard hash // to remove the commit and the change also from vs code
 
 fork the repository by github
+
+git rebase main // to rebase the branch with the main branch
 
 
 
