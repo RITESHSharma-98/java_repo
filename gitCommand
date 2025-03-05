@@ -1,5 +1,57 @@
 # List of commonly used Git commands
 
+git --version
+git config --global user.name "RITESHSharma-98"
+git config --global user.email "ritesh12.cse@gmail.com"
+git config --list
+
+git clone link
+// edit the file
+git status
+cd java_repo   // cd ..  // mkdir java_repo2  //cd java_repo2
+git status
+git add .    // go to stage area
+git commit -m "Initial commit"
+git push -u origin main  
+   //git remote set-url origin https://RITESHSharma-98:NEW_GENERATED_TOKEN@github.com/RITESHSharma-98/java_repo.git
+git push  // if -u is used then no need to use this command
+git pull 
+
+ls -a
+git init
+git remote add origin link
+git remote -v // to check the remote repository
+git branch // to check the branch
+git branch -M main // to change the branch name
+git push -u origin main // to push the code to the remote repository
+
+git branch // to check the branch
+git branch -M main // to change the branch name
+git checkout -b branch_name // to create a new branch
+git checkout branch_name // to switch to the branch
+git branch -d branch_name // to delete the branch
+git push origin --delete branch_name // to delete the branch from remote repository 
+git diff main// to check the difference between the files
+git checkout branch_name // to switch to the branch
+git merge main // to merge the branch with the main branch
+git push origin branch_name // to push the branch to remote repository
+git merge branch_name // to merge the branch with the current branch
+git pull origin branch_name // to pull the branch from remote repository
+
+
+git reset filenmae // to remove the file from the staging area
+git reset // to remove all the files from the staging area
+git reset head~1 // to remove the last commit
+git reset HEAD~2 // to remove the last 2 commit
+git log
+git reset hash // to remove the commit
+git reset --hard hash // to remove the commit and the change also from vs code
+
+fork the repository by github
+
+
+
+
 # Initialize a new Git repository
 git init
 
