@@ -1,15 +1,6 @@
-# List of commonly used Git commands
-
-git --version
-git config --global user.name "RITESHSharma-98"
-git config --global user.email "ritesh12.cse@gmail.com"
-git config --list
-
-git clone link
-// edit the file
+  //pwd
 git status
-cd java_repo   // cd ..  // mkdir java_repo2  //cd java_repo2
-git status
+gi add onefile secondfile
 git add .    // go to stage area
 git commit -m "Initial commit"
 git push -u origin main  
@@ -18,7 +9,7 @@ git push  // if -u is used then no need to use this command
 git pull 
 
 ls -a
-git init
+git init    //tacking start of the project
 git remote add origin link
 git remote -v // to check the remote repository
 git branch // to check the branch
@@ -28,6 +19,10 @@ git push -u origin main // to push the code to the remote repository
 git branch // to check the branch
 git branch -M main // to change the branch name
 git checkout -b branch_name // to create a new branch
+git branch branch_name // to create a new branch
+git branch // to check the branch
+git switch branch_name // to switch to the branch
+
 git checkout branch_name // to switch to the branch
 git branch -d branch_name // to delete the branch
 git push origin --delete branch_name // to delete the branch from remote repository 
@@ -198,4 +193,19 @@ git config --global core.excludesfile [file] – Set a global ignore pattern.
 Save patterns in a .gitignore file, e.g.:
 logs/
 *.notes
-pattern*/
+pattern*/# List of commonly used Git commands
+
+git --version
+git config --global user.name "RITESHSharma-98"
+git config --global user.email "ritesh12.cse@gmail.com"
+git config --list
+
+// .gitignore file 
+// .gitleep file
+
+
+
+git clone link
+// edit the file
+git status      //ls   // ls -la
+cd java_repo   // cd ..  // mkdir java_repo2  //cd java_repo2
