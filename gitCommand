@@ -22,6 +22,9 @@ git push origin <branch_name>
 # Pull changes from the remote repository
 git pull origin <branch_name>
 
+# Pull changes from the remote repository and merge with the current branch
+git pull
+
 # Create a new branch
 git branch <branch_name>
 
