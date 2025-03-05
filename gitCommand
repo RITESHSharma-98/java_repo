@@ -46,6 +46,7 @@ git reset filenmae // to remove the file from the staging area
 git reset // to remove all the files from the staging area
 git reset head~1 // to remove the last commit
 git reset HEAD~2 // to remove the last 2 commit
+
 git log
 git log --oneline // to check the commit history
 
