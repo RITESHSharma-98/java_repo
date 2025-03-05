@@ -87,3 +87,63 @@ git clean -f
 
 # Show the commit that added or removed lines in a file
 git blame <file_name>
+
+# Stage & Snapshot
+git status – Show modified files in the working directory, staged for your next commit.
+git add [file] – Add a file as it looks now to your next commit (stage).
+git reset [file] – Unstage a file while retaining the changes in the working directory.
+git diff – Show differences between files that are changed but not staged.
+git diff --staged – Show differences between files that are staged but not yet committed.
+git commit -m "[descriptive message]" – Commit your staged content as a new commit snapshot.
+
+# Setup
+git config --global user.name "[firstname lastname]" – Set a name that is identifiable for reviewing version history.
+git config --global user.email "[valid-email]" – Set an email address associated with each history marker.
+git config --global color.ui auto – Enable automatic command-line coloring for Git.
+
+# Setup & Init
+git init – Initialize an existing directory as a Git repository.
+git clone [url] – Retrieve an entire repository from a hosted location via URL.
+
+# Branch & Merge
+git branch – List your branches. A * appears next to the active branch.
+git branch [branch-name] – Create a new branch at the current commit.
+git checkout [branch] – Switch to another branch and check it out into your working directory.
+git merge [branch] – Merge the specified branch’s history into the current one.
+git log – Show all commits in the current branch’s history.
+
+# Share & Update
+git remote add [alias] [url] – Add a Git URL as an alias.
+git fetch [alias] – Fetch all branches from the remote.
+git merge [alias]/[branch] – Merge a remote branch into your current branch.
+git push [alias] [branch] – Transmit local branch commits to the remote repository.
+git pull – Fetch and merge any commits from the tracking remote branch.
+
+# Tracking Path Changes
+git rm [file] – Delete a file from the project and stage the removal for commit.
+git mv [existing-path] [new-path] – Move/rename a file and stage the change.
+git log --stat -M – Show commit logs with details of moved paths.
+
+# Temporary Commits
+git stash – Save modified and staged changes temporarily.
+git stash list – List stashed changes.
+git stash pop – Apply stashed changes from the top of the stash stack.
+git stash drop – Remove the latest stashed change.
+
+# Rewrite History
+git rebase [branch] – Apply commits of the current branch on top of the specified branch.
+git reset --hard [commit] – Clear the staging area and reset working tree to a specific commit.
+
+# Inspect & Compare
+git log – Show commit history for the active branch.
+git log branchB..branchA – Show commits on branchA that are not on branchB.
+git log --follow [file] – Show commits that changed a file, even across renames.
+git diff branchB...branchA – Show the difference between branchA and branchB.
+git show [SHA] – Show any object in Git in a human-readable format.
+
+# Ignoring Patterns
+git config --global core.excludesfile [file] – Set a global ignore pattern.
+Save patterns in a .gitignore file, e.g.:
+logs/
+*.notes
+pattern*/
